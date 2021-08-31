@@ -9,20 +9,6 @@ import java.util.Properties;
 
 public class ConnectionCreator
 {
-    /*public static Connection getConnection(String url, String user, String pass)
-    {
-        Connection connection = null;
-        try
-        {
-            connection = DriverManager.getConnection(url, user, pass);
-        } catch (Exception e)
-        {
-            System.out.println("Connection failed...");
-            System.out.println(e);
-            //e.printStackTrace();
-        }
-        return connection;
-    }*/
     private static final Properties properties = new Properties();
     private static final String DATABASE_URL;
 
