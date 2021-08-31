@@ -26,25 +26,10 @@ public class Route
         return route.size();
     }
 
-    /*public int getBusPlaceId(int i)
-    {
-        if (i < route.size())
-            return route.get(i).getStopId();
-        else
-            return 0;
-    }*/
-
     public BusPlace getBusPlace(int i)
     {
         BusPlace place = null;
-        /*
-        for (entity.BusStop stop : route)
-        {
-            if(busStopId == stop.getStopId())
-            {
-                place = stop.takePlace();
-            }
-        }*/
+
         place = route.get(i).takePlace();//
 
         return place;
